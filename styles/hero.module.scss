@@ -5,6 +5,7 @@
   // max-width: 1281px;
   display: flex;
   justify-content: space-around;
+  padding: 70px;
 }
 
 .contentContainer {
@@ -15,20 +16,38 @@
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
+  @media only screen and (max-width: 890px) {
+    padding: 2.5rem 1rem;
+    flex-direction: column;
+    min-height: auto;
+  }
 }
 
 .contentContainer {
-  h6,
   h1 {
     color: $primary-light;
-  }
-
-  h6 {
     font-size: 17px;
+    text-align: center;
+    font-weight: 200;
   }
 
-  h1 {
+  span {
     font-size: 40px;
+    font-weight: 800;
+  }
+
+  @media only screen and (max-width: 500px) {
+    max-width: 350px;
+    h1,
+    h6 {
+      font-size: 3.7rem;
+    }
+  }
+  @media only screen and (max-width: 360px) {
+    h1,
+    h6 {
+      font-size: 3.3rem;
+    }
   }
 }
 
@@ -71,4 +90,16 @@
 
 .imageContainer {
   width: 275px;
+}
+
+@media only screen and (max-width: 500px) {
+  .btn {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .btn {
+    width: 300px;
+  }
 }

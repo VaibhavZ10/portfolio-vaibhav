@@ -8,8 +8,10 @@ export default function Hero() {
     <div>
       <div className={styles.heroContainer}>
         <div className={styles.contentContainer}>
-          <h6>Hello, I'm</h6>
-          <h1>Vaibhav Sindal</h1>
+          <h1>
+            Hello, I'm<br></br>
+            <span>Vaibhav Sindal</span>
+          </h1>
           <div className={styles.buttonContainer}>
             {/* <Link href=""> */}
             <a className={`${styles.btnOutlineColor} ${styles.btn}`}>
