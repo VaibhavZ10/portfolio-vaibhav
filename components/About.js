@@ -8,11 +8,11 @@ export default function AboutSection() {
     <div className={styles.aboutContainer}>
       <div className={styles.headingContainer}>
         <h1>About Me</h1>
-        <div className={styles.containerContent}>
+        <div className={styles.aboutWrapper}>
           <div className={styles.imageContainer}>
             <Image src={helpPic} alt="Help" />
           </div>
-          <div className={styles.aboutText}>
+          <div className={styles.contentContainer}>
             <p>
               An IT undegrad student, Frontend developer, working in designing
               and web technologies, delivering quality work.

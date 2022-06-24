@@ -5,6 +5,11 @@
   // max-width: 928px;
   display: flex;
   justify-content: space-around;
+
+  @media only screen and (max-width: 890px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .headingContainer {
@@ -17,39 +22,62 @@
   }
 }
 
-.containerContent {
+.aboutWrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 auto;
-  align-items: center;
+  padding: 5rem 1rem;
+  @media only screen and (max-width: 890px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .imageContainer {
   max-width: 400px;
-  margin-right: 200px;
+  margin-right: 10rem;
 }
 
-.aboutText {
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 650px;
+  justify-content: space-between;
   p {
     color: $primary-light;
-    max-width: 650px;
-    line-height: 1.4;
-    margin-bottom: 100px;
+    max-width: 450px;
+    line-height: 1.8;
+    margin-top: -2rem;
   }
 }
 
-.btn {
+// @media only screen and (max-width: 890px) {
+//   .contentContainer {
+//     p {
+//       margin-top: 20px;
+//       font-size: 1rem;
+//     }
+//   }
+// }
+
+.buttonContainer {
+  max-width: 319px;
   display: flex;
-  justify-content: space-evenly;
-  font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1.1rem;
-  font-weight: 400;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.8rem 1.8rem;
-  transition: 0.1s ease-in;
+  padding: 1rem 0;
+  gap: 1rem;
+  .btn {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 1.8rem;
+    transition: 0.1s ease-in;
+  }
 }
 
 .buttonContainer {
@@ -58,15 +86,10 @@
   padding: 1rem 0;
   gap: 1rem;
 }
-
 .btnFilled {
   background-color: $primary-color;
   color: $tertiary-dark;
   &:hover {
     filter: brightness(120%);
   }
-}
-
-.imageContainer {
-  width: 275px;
 }

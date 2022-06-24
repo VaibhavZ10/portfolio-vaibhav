@@ -2,26 +2,37 @@
 
 .heroContainer {
   background-color: $primary-dark;
-  // max-width: 1281px;
   display: flex;
   justify-content: space-around;
+
   padding: 70px;
 }
 
 .contentContainer {
-  max-width: 1281px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto;
-  @media only screen and (max-width: 890px) {
-    padding: 2.5rem 1rem;
-    flex-direction: column;
-    min-height: auto;
-  }
 }
+// .heroContainer {
+//   background-color: $primary-dark;
+//   display: flex;
+//   justify-content: space-around;
+//   padding: 70px;
+// }
+
+// .heroWrapper {
+//   // max-width: 1281px;
+//   display: flex;
+//   flex-wrap: wrap;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   align-items: center;
+//   margin: 0 auto;
+//   @media (max-width: 890px) {
+//     padding: 2.5rem 1rem;
+//     flex-direction: column;
+//     min-height: auto;
+//   }
+// }
 
 .contentContainer {
   h1 {
@@ -29,27 +40,31 @@
     font-size: 17px;
     text-align: center;
     font-weight: 200;
-  }
 
-  span {
-    font-size: 40px;
-    font-weight: 800;
-  }
-
-  @media only screen and (max-width: 500px) {
-    max-width: 350px;
-    h1,
-    h6 {
-      font-size: 3.7rem;
-    }
-  }
-  @media only screen and (max-width: 360px) {
-    h1,
-    h6 {
-      font-size: 3.3rem;
+    span {
+      font-size: 40px;
+      font-weight: 800;
     }
   }
 }
+//   @media only screen and (max-width: 500px) {
+//     // max-width: 350px;
+//     h1 {
+//       font-size: 2rem;
+//       span {
+//         font-size: 3.7rem;
+//       }
+//     }
+//   }
+//   @media only screen and (max-width: 360px) {
+//     h1 {
+//       font-size: 2rem;
+//       span {
+//         font-size: 3.2rem;
+//       }
+//     }
+//   }
+// }
 
 .btn {
   display: flex;
@@ -84,7 +99,7 @@
   background-color: $primary-color;
   color: $tertiary-dark;
   &:hover {
-    filter: brightness(120%);
+    filter: brightness(180%);
   }
 }
 
@@ -92,14 +107,15 @@
   width: 275px;
 }
 
-@media only screen and (max-width: 500px) {
-  .btn {
-    width: 350px;
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  .btn {
-    width: 300px;
-  }
-}
+// @media (max-width: 500px) {
+//   .buttonContainer {
+//     width: 350px;
+//     display: flex;
+//     flex-direction: column;
+//   }
+// }
+// @media only screen and (max-width: 360px) {
+//   .buttonContainer {
+//     width: 300px;
+//   }
+// }

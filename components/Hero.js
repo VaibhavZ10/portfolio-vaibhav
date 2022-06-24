@@ -7,6 +7,7 @@ export default function Hero() {
   return (
     <div>
       <div className={styles.heroContainer}>
+        {/* <div className={styles.heroWrapper}> */}
         <div className={styles.contentContainer}>
           <h1>
             Hello, I'm<br></br>
@@ -28,6 +29,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
+      {/* </div> */}
     </div>
   );
 }
