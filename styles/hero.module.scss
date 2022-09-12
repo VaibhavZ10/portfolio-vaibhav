@@ -1,0 +1,121 @@
+@import "variables.module.scss";
+
+.heroContainer {
+  background-color: $primary-dark;
+  display: flex;
+  justify-content: space-around;
+
+  padding: 70px;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+}
+// .heroContainer {
+//   background-color: $primary-dark;
+//   display: flex;
+//   justify-content: space-around;
+//   padding: 70px;
+// }
+
+// .heroWrapper {
+//   // max-width: 1281px;
+//   display: flex;
+//   flex-wrap: wrap;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   align-items: center;
+//   margin: 0 auto;
+//   @media (max-width: 890px) {
+//     padding: 2.5rem 1rem;
+//     flex-direction: column;
+//     min-height: auto;
+//   }
+// }
+
+.contentContainer {
+  h1 {
+    color: $primary-light;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 200;
+
+    span {
+      font-size: 40px;
+      font-weight: 800;
+    }
+  }
+}
+//   @media only screen and (max-width: 500px) {
+//     // max-width: 350px;
+//     h1 {
+//       font-size: 2rem;
+//       span {
+//         font-size: 3.7rem;
+//       }
+//     }
+//   }
+//   @media only screen and (max-width: 360px) {
+//     h1 {
+//       font-size: 2rem;
+//       span {
+//         font-size: 3.2rem;
+//       }
+//     }
+//   }
+// }
+
+.btn {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 1.8rem;
+  transition: 0.1s ease-in;
+}
+.buttonContainer {
+  max-width: 319px;
+  display: flex;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.btnOutlineColor {
+  background-color: none;
+  color: $primary-light;
+  border: 2px $primary-color solid;
+  &:hover {
+    filter: brightness(120%);
+  }
+}
+.btnFilled {
+  background-color: $primary-color;
+  color: $tertiary-dark;
+  &:hover {
+    filter: brightness(180%);
+  }
+}
+
+.imageContainer {
+  width: 275px;
+}
+
+// @media (max-width: 500px) {
+//   .buttonContainer {
+//     width: 350px;
+//     display: flex;
+//     flex-direction: column;
+//   }
+// }
+// @media only screen and (max-width: 360px) {
+//   .buttonContainer {
+//     width: 300px;
+//   }
+// }

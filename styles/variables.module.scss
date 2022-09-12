@@ -1,0 +1,16 @@
+$primary-color: #e47aff;
+$primary-dark: rgb(17, 26, 32);
+$secondary-dark: #182228;
+$tertiary-dark: 293241;
+$primary-light: #ffffff;
+$secondary-light: #f4f7ff;
+$text: rgb(41, 50, 65);
+$footer: rgb(255, 169, 122);
+
+:export {
+  primaryColor: $primary-color;
+  primaryLight: $primary-light;
+  secondaryLight: $secondary-light;
+  primaryDark: $primary-dark;
+  secondaryDark: $secondary-dark;
+}
