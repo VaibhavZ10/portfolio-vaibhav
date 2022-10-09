@@ -1,0 +1,48 @@
+@import "variables.module.scss";
+
+.navContainer {
+  color: beige;
+  background-color: $secondary-dark;
+}
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $secondary-dark;
+}
+
+.navWrapper {
+  max-width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.logo {
+  color: $primary-color;
+}
+
+.nav-options {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-right: 3rem;
+}
+
+.option {
+  padding: 0.5rem 2.5rem;
+}
+
+@media (max-width: 890px) {
+  .nav-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 680px) {
+}
