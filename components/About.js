@@ -5,7 +5,7 @@ import helpPic from "../public/assets/Help-removebg-preview.png";
 
 export default function AboutSection() {
   return (
-    <div className={styles.aboutContainer}>
+    <div id="about" className={styles.aboutContainer}>
       <div className={styles.headingContainer}>
         <h1>About Me</h1>
         <div className={styles.aboutWrapper}>
@@ -19,7 +19,12 @@ export default function AboutSection() {
               and inquisitive for web apps and product designs.
             </p>
             <div className={styles.buttonContainer}>
-              <a className={`${styles.btnFilled} ${styles.btn}`}>Contact Me</a>
+              <a
+                href="#contact"
+                className={`${styles.btnFilled} ${styles.btn}`}
+              >
+                Contact Me
+              </a>
             </div>
           </div>
         </div>

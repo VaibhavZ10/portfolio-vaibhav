@@ -2,15 +2,16 @@
 
 .footerContainer {
   background-color: $footer;
+  display: flex;
+  padding: 5%;
 }
 
 .footerWrapper {
-  max-width: 928px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  // padding: 2rem 1rem;
 }
 
 .titleContainer {
@@ -20,21 +21,27 @@
     vertical-align: top;
   }
 }
-.contentContainer {
-  display: flex;
-  padding: 0.5rem;
-  justify-content: column;
-}
 .navBar {
   display: flex;
-  width: 525px;
+  // width: 525px;
   justify-content: space-around;
+  gap: 2rem;
+
+  @media only screen and (max-width: 510px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  // @media only screen and (max-width: 600px) {
+  //   width: 500px;
+  // }
 }
 .iconColumn {
   display: flex;
-  width: 150px;
+  width: 250px;
   justify-content: space-between;
   padding: 30px 28px;
+  size: 50rem;
 }
 
 .footerLink {

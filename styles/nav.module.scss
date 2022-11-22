@@ -10,12 +10,20 @@
 }
 
 .navWrapper {
-  max-width: 1050px;
+  width: 1050px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   height: 100%;
+  @media (max-width: 890px) {
+    display: flex;
+    width: 500px;
+  }
+  @media (max-width: 400px) {
+    display: flex;
+    width: 400px;
+  }
 }
 
 .logo {
@@ -38,7 +46,7 @@
   color: $primary-color;
 }
 
-@media (max-width: 1090px) {
+@media (max-width: 890px) {
   .nav-options {
     display: flex;
     justify-content: space-between;

@@ -1,8 +1,8 @@
 @import "variables.module.scss";
 
 .aboutContainer {
+  padding-top: 3rem;
   background-color: $primary-dark;
-  // max-width: 928px;
   display: flex;
   justify-content: space-around;
 
@@ -23,10 +23,12 @@
 }
 
 .aboutWrapper {
+  // width: 150vh;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   padding: 5rem 1rem;
+  gap: 10rem;
   @media only screen and (max-width: 890px) {
     flex-direction: column;
     align-items: center;
@@ -34,7 +36,6 @@
 }
 .imageContainer {
   max-width: 400px;
-  margin-right: 10rem;
 }
 
 .contentContainer {
@@ -50,20 +51,28 @@
   }
 }
 
-// @media only screen and (max-width: 890px) {
-//   .contentContainer {
-//     p {
-//       margin-top: 20px;
-//       font-size: 1rem;
-//     }
-//   }
-// }
+@media only screen and (max-width: 890px) {
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      margin-top: 20px;
+      font-size: 1rem;
+    }
+    .imageContainer {
+      width: 275px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
 
 .buttonContainer {
-  max-width: 319px;
+  // max-width: 319px;
   display: flex;
   padding: 1rem 0;
-  gap: 1rem;
+  gap: 2rem;
   .btn {
     display: flex;
     justify-content: space-evenly;
@@ -91,5 +100,17 @@
   color: $tertiary-dark;
   &:hover {
     filter: brightness(120%);
+  }
+}
+@media (max-width: 500px) {
+  .buttonContainer {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .buttonContainer {
+    width: 300px;
   }
 }

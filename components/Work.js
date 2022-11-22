@@ -1,9 +1,12 @@
 import React from "react";
 import styles from "../styles/services.module.scss";
+import Image from "next/image";
+import task from "../public/assets/task.png";
+import alambre from "../public/assets/alambre.png";
 
 const Services = () => {
   return (
-    <div className={styles.contentContainer}>
+    <div id="work" className={styles.contentContainer}>
       <h1>
         Recent Works <br></br>
         <span></span>
@@ -11,19 +14,23 @@ const Services = () => {
       <div className={styles.boxContainer}>
         <div className={styles.boxDesign}>
           <h5 bold>Task Tracker using React </h5>
-          <p>
-            You want to launch your website, you need a design for your future
-            site? Reach out to me and we will discuss your needs and desires.
-          </p>
-          <button className={styles.btn}>Contact Me</button>
+          <Image src={task} width={"275px"} height={"170px"} />
+          <p>A daily task tracker app using built using ReactJS.</p>
+          <a href="https://github.com/VaibhavZ10/react-task-tracker">
+            {" "}
+            <button className={styles.btn}>View Project</button>
+          </a>{" "}
         </div>
         <div className={styles.boxDesign}>
-          <h5 bold>Breast Cancer Detection </h5>
+          <h5 bold>Alambre Cables Website </h5>
+          <Image src={alambre} width={"275px"} height={"150px"} />
           <p>
-            You want to refurbish your website, need a new and sleek design?
-            Reach out to me and we will discuss your needs and desires.
+            Delivered the design and front-end profile for a Mumbai based Alarm
+            break company : Alambre.
           </p>
-          <button className={styles.btn}>Contact Me</button>
+          <a href="https://alambre-cables-website.vercel.app/">
+            <button className={styles.btn}>View Project</button>
+          </a>
         </div>
       </div>
     </div>

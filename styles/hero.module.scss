@@ -1,38 +1,19 @@
 @import "variables.module.scss";
 
 .heroContainer {
-  background-color: $primary-dark;
+  // background-color: $primary-dark;
+  background-image: url("/assets/images/herobg.jpeg");
   display: flex;
   justify-content: space-around;
   height: 100vh;
   align-items: center;
+  padding-top: 2rem;
 }
 
 .contentContainer {
   display: flex;
   flex-direction: column;
 }
-// .heroContainer {
-//   background-color: $primary-dark;
-//   display: flex;
-//   justify-content: space-around;
-//   padding: 70px;
-// }
-
-// .heroWrapper {
-//   // max-width: 1281px;
-//   display: flex;
-//   flex-wrap: wrap;
-//   flex-direction: column;
-//   justify-content: space-around;
-//   align-items: center;
-//   margin: 0 auto;
-//   @media (max-width: 890px) {
-//     padding: 2.5rem 1rem;
-//     flex-direction: column;
-//     min-height: auto;
-//   }
-// }
 
 .contentContainer {
   h1 {
@@ -46,25 +27,26 @@
       font-weight: 800;
     }
   }
+  @media only screen and (max-width: 500px) {
+    padding-top: 5rem;
+  }
 }
-//   @media only screen and (max-width: 500px) {
-//     // max-width: 350px;
-//     h1 {
-//       font-size: 2rem;
-//       span {
-//         font-size: 3.7rem;
-//       }
-//     }
-//   }
-//   @media only screen and (max-width: 360px) {
-//     h1 {
-//       font-size: 2rem;
-//       span {
-//         font-size: 3.2rem;
-//       }
-//     }
-//   }
-// }
+@media only screen and (max-width: 500px) {
+  .h1 {
+    font-size: 2rem;
+    span {
+      font-size: 3.7rem;
+    }
+  }
+}
+@media only screen and (max-width: 360px) {
+  .h1 {
+    font-size: 2rem;
+    span {
+      font-size: 3.2rem;
+    }
+  }
+}
 
 .btn {
   display: flex;
@@ -99,7 +81,7 @@
   background-color: $primary-color;
   color: $tertiary-dark;
   &:hover {
-    filter: brightness(180%);
+    filter: brightness(120%);
   }
 }
 
@@ -107,15 +89,15 @@
   width: 275px;
 }
 
-// @media (max-width: 500px) {
-//   .buttonContainer {
-//     width: 350px;
-//     display: flex;
-//     flex-direction: column;
-//   }
-// }
-// @media only screen and (max-width: 360px) {
-//   .buttonContainer {
-//     width: 300px;
-//   }
-// }
+@media (max-width: 500px) {
+  .buttonContainer {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .buttonContainer {
+    width: 300px;
+  }
+}

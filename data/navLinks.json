@@ -1,0 +1,20 @@
+{
+  "navLinks": [
+    {
+      "name": "About",
+      "link": "/about"
+    },
+    {
+      "name": "Services",
+      "link": "/services"
+    },
+    {
+      "name": "Works",
+      "link": "/works"
+    },
+    {
+      "name": "Contact",
+      "link": "/contact"
+    }
+  ]
+}

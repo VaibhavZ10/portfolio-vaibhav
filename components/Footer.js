@@ -7,26 +7,23 @@ import Insta from "../public/assets/images/Insta.png";
 
 export default function footer() {
   return (
-    <div>
+    <div id="contact">
       <div className={styles.footerContainer}>
         <div className={styles.footerWrapper}>
           <div className={styles.titleContainer}>
             <h3>Vaibhav Sindal</h3>
           </div>
           <div className={styles.navBar}>
-            <Link href="/products/about">
+            <Link href="#about">
               <a className={styles.footerLink}>About</a>
             </Link>
-            <Link href="/products/experience">
-              <a className={styles.footerLink}>Experience</a>
-            </Link>
-            <Link href="/products/services">
+            <Link href="#services">
               <a className={styles.footerLink}>Services</a>
             </Link>
-            <Link href="/products/portfolio">
+            <Link href="#work">
               <a className={styles.footerLink}>Portfolio</a>
             </Link>
-            <Link href="/products/contact">
+            <Link href="#contact">
               <a className={styles.footerLink}>Contact</a>
             </Link>
           </div>
@@ -38,24 +35,30 @@ export default function footer() {
             >
               <Image
                 src={Mail}
-                width={"18px"}
-                height={"18px"}
+                width={"30px"}
+                height={"30px"}
                 alt="Email icon"
               ></Image>{" "}
             </a>
-            <a className={styles.footerLink}>
+            <a
+              href="https://twitter.com/vaibhav_sindal"
+              className={styles.footerLink}
+            >
               <Image
                 src={Twitter}
-                width={"18px"}
-                height={"18px"}
+                width={"30px"}
+                height={"30px"}
                 alt="Twitter icon"
               ></Image>{" "}
             </a>
-            <a className={styles.footerLink}>
+            <a
+              href="https://www.linkedin.com/in/vaibhav-sindal-b3325ab6/"
+              className={styles.footerLink}
+            >
               <Image
                 src={Insta}
-                width={"18px"}
-                height={"18px"}
+                width={"30px"}
+                height={"30px"}
                 alt="Insta icon"
               ></Image>{" "}
             </a>{" "}

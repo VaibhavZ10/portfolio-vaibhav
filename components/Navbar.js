@@ -1,9 +1,9 @@
 import { useState } from "react";
-import DrawerToggleButton from "../components/DrawerToggleButton";
-
 import styles from "../styles/nav.module.scss";
-
 import React from "react";
+import Image from "next/image";
+import logo from "../public/assets/images/logo.png";
+import Link from "next/link";
 
 const Navbar = () => {
   // const [scrolled, setScrolled] = useState(false);
@@ -28,26 +28,25 @@ const Navbar = () => {
     <div className={`${styles.navContainer}`}>
       <div className={styles.navWrapper}>
         <div className={styles["logo"]}>
-          <a href="#">VS</a>
+          <a href="#hero" className={styles.footerLink}>
+            <Image src={logo} width={"50"} height={"50"} alt="logo"></Image>
+          </a>
         </div>
 
         <ul className={styles["nav-options"]}>
           <li className={styles.option}>
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
 
           <li className={styles.option}>
-            <a href="#">Services</a>
+            <a href="#services">Services</a>
           </li>
           <li className={styles.option}>
-            <a href="#">Portfolio</a>
+            <a href="#work">Portfolio</a>
           </li>
           <li className={styles.option}>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
-          <div>
-            <DrawerToggleButton />
-          </div>
         </ul>
       </div>
     </div>

@@ -5,7 +5,7 @@ import hiPic from "../public/assets/Hi_1-removebg-preview.png";
 
 export default function Hero() {
   return (
-    <div>
+    <div id="hero">
       <div className={styles.heroContainer}>
         {/* <div className={styles.heroWrapper}> */}
         <div className={styles.contentContainer}>
@@ -15,13 +15,18 @@ export default function Hero() {
           </h1>
           <div className={styles.buttonContainer}>
             {/* <Link href=""> */}
-            <a className={`${styles.btnOutlineColor} ${styles.btn}`}>
+            <a
+              href="https://drive.google.com/file/d/1zi1b8RGkOEx2Q00_EDWggCZfDSdila9v/view?usp=sharing"
+              className={`${styles.btnOutlineColor} ${styles.btn}`}
+            >
               Download CV
             </a>
             {/* </Link> */}
 
             {/* <Link href=""> */}
-            <a className={`${styles.btnFilled} ${styles.btn}`}>About Me</a>
+            <a href="#about" className={`${styles.btnFilled} ${styles.btn}`}>
+              About Me
+            </a>
             {/* </Link> */}
           </div>
           <div className={styles.imageContainer}>
