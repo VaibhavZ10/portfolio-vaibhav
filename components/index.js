@@ -1,11 +1,11 @@
 import Head from "next/head";
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Footer from "../components/Footer";
-import Services from "../components/Services";
-import Work from "../components/Work";
-import NavBar from "../components/Navbar";
-
+import Hero from "./Hero";
+import About from "./About";
+import Footer from "./Footer";
+import Services from "./Services";
+import Work from "./Work";
+import NavBar from "./Navbar";
+// import SideDrawer from "../components/SideDrawer";
 export default function Home() {
   return (
     <div>
@@ -15,6 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
+      {/* <SideDrawer /> */}
       <Hero />
       {<About />}
       {<Services />}

@@ -3,12 +3,10 @@
 .navContainer {
   color: beige;
   background-color: $secondary-dark;
-}
-.scrolled {
   position: fixed;
-  top: 0;
-  left: 0;
-  background-color: $secondary-dark;
+  width: 100vw; //viewport width
+  z-index: 1;
+  height: 50px;
 }
 
 .navWrapper {
@@ -16,11 +14,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 2rem;
+  margin: 0 auto;
+  height: 100%;
 }
 
 .logo {
+  display: flex;
   color: $primary-color;
+  padding: 1rem 0rem;
 }
 
 .nav-options {
@@ -29,20 +30,25 @@
   align-items: center;
   flex-wrap: wrap;
   list-style-type: none;
-  margin-right: 3rem;
+  padding: 1rem 0rem;
+  gap: 2rem;
+}
+.nav-options a:hover,
+.nav-options a:active {
+  color: $primary-color;
 }
 
-.option {
-  padding: 0.5rem 2.5rem;
-}
-
-@media (max-width: 890px) {
+@media (max-width: 1090px) {
   .nav-options {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 680px) {
+  .nav-options {
+    display: flex;
+  }
 }
