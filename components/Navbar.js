@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import logo from "../public/assets/images/logo.png";
 import Link from "next/link";
+import NavLink from "../components/NavLink";
 
 const Navbar = () => {
   // const [scrolled, setScrolled] = useState(false);
@@ -24,20 +25,29 @@ const Navbar = () => {
   // if (scrolled) {
   //   navbarClasses.push("scrolled");
   // }
+
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const handleToggle = () => {
+    setNavbarOpen(!navbarOpen);
+  };
+
   return (
-    <div className={`${styles.navContainer}`}>
+    <div className={styles.navContainer}>
       <div className={styles.navWrapper}>
         <div className={styles["logo"]}>
           <a href="#hero" className={styles.footerLink}>
             <Image src={logo} width={"50"} height={"50"} alt="logo"></Image>
           </a>
         </div>
+        <button className={styles.hamburger} onClick={handleToggle}>
+          {navbarOpen ? "Close" : "Open"}
+        </button>
 
-        <ul className={styles["nav-options"]}>
+        <ul className={styles.navOptions}>
           <li className={styles.option}>
             <a href="#about">About</a>
           </li>
-
           <li className={styles.option}>
             <a href="#services">Services</a>
           </li>
@@ -49,6 +59,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      <div className={styles.drawer}>{navbarOpen ? "Close" : "Open"}</div>
     </div>
   );
 };
