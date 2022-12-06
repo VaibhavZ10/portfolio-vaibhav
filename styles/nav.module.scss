@@ -1,7 +1,7 @@
 @import "variables.module.scss";
 
 .navContainer {
-  color: beige;
+  // color: beige;
   background-color: $secondary-dark;
   position: fixed;
   width: 100vw; //viewport width
@@ -19,10 +19,6 @@
   @media (max-width: 1200px) {
     margin: 0 2rem;
   }
-  // @media (max-width: 400px) {
-  //   // display: flex;
-  //   width: 400px;
-  // }
 }
 
 .logo {
@@ -39,33 +35,38 @@
   padding: 1rem 0rem;
   gap: 2rem;
 
+  a:hover,
+  a:active {
+    color: $primary-color;
+  }
+
   @media (max-width: 650px) {
     display: none;
   }
 }
-.nav-options a:hover,
-.nav-options a:active {
-  color: $primary-color;
-}
-
-// @media (max-width: 890px) {
-//   .nav-options {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     margin: 0 auto;
-//   }
-// }
-
-// @media (max-width: 680px) {
-//   .nav-options {
-//     display: flex;
-//   }
-// }
 
 .hamburger {
   display: none;
   @media (max-width: 650px) {
-    display: flex;
+    display: grid;
+  }
+}
+
+.hamContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: $secondary-dark;
+  @media (min-width: 650px) {
+    display: none;
+  }
+}
+.hamOption {
+  margin: 1.5rem 2rem;
+  list-style-type: none;
+  font-size: 1.2rem;
+  a:hover,
+  a:active {
+    color: $primary-color;
   }
 }

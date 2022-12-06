@@ -14,25 +14,25 @@ const Services = () => {
         <div className={styles.boxDesign}>
           <h5 bold>
             <Image className={styles.Tick} src={Tick} />
-            Creation of a website/web app design
+            Creating a website/web app
           </h5>
           <p>
             You want to launch your website, you need a design for your future
             site? Reach out to me and we will discuss your needs and desires.
           </p>
 
-          <button className={styles.btn}>Contact Me</button>
+          {/* <button className={styles.btn}>Contact Me</button> */}
         </div>
         <div className={styles.boxDesign}>
           <h5 bold>
             <Image src={Tick} />
-            Rebranding
+            Rebranding a website
           </h5>
           <p>
             You want to refurbish your website, need a new and sleek design?
             Reach out to me and we will discuss your needs and desires.
           </p>
-          <button className={styles.btn}>Contact Me</button>
+          {/* <button className={styles.btn}>Contact Me</button> */}
         </div>
       </div>
     </div>

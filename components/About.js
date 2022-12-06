@@ -20,7 +20,7 @@ export default function AboutSection() {
             </p>
             <div className={styles.buttonContainer}>
               <a
-                href="#contact"
+                href="/ContactForm"
                 className={`${styles.btnFilled} ${styles.btn}`}
               >
                 Contact Me
