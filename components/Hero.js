@@ -10,7 +10,7 @@ export default function Hero() {
         {/* <div className={styles.heroWrapper}> */}
         <div className={styles.contentContainer}>
           <h1>
-            Hello, I m <br></br>
+            Hello, I am <br></br>
             <span>Vaibhav Sindal</span>
           </h1>
           <div className={styles.buttonContainer}>
