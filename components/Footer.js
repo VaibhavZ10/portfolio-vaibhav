@@ -23,7 +23,7 @@ export default function footer() {
             <Link href="#work">
               <a className={styles.footerLink}>Portfolio</a>
             </Link>
-            <Link href="/ContactForm">
+            <Link href="_contact.page">
               <a className={styles.footerLink}>Contact</a>
             </Link>
           </div>

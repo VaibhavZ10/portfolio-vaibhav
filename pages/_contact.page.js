@@ -1,7 +1,7 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 
-const ContactForm = () => {
+export default function ContactForm() {
   const [formStatus, setFormStatus] = React.useState("Send");
   const onSubmit = (e) => {
     e.preventDefault();
@@ -42,8 +42,4 @@ const ContactForm = () => {
       </form>
     </div>
   );
-};
-export default ContactForm;
-module.exports = {
-  pageExtensions: ["page.tsx", "page.ts", "page.jsx", "page.js"],
-};
+}
