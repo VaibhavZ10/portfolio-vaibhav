@@ -19,12 +19,11 @@ export default function AboutSection() {
               and inquisitive for web apps and product designs.
             </p>
             <div className={styles.buttonContainer}>
-              <a
-                href="/ContactForm"
-                className={`${styles.btnFilled} ${styles.btn}`}
-              >
-                Contact Me
-              </a>
+              <Link href="/ContactForm">
+                <a className={`${styles.btnFilled} ${styles.btn}`}>
+                  Contact Me
+                </a>
+              </Link>
             </div>
           </div>
         </div>
