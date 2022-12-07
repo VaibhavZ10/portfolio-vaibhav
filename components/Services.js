@@ -13,7 +13,7 @@ const Services = () => {
       <div className={styles.boxContainer}>
         <div className={styles.boxDesign}>
           <h5 bold>
-            <Image className={styles.Tick} src={Tick} />
+            <Image className={styles.Tick} src={Tick} alt="Tick" />
             Creating a website/web app
           </h5>
           <p>
@@ -25,7 +25,7 @@ const Services = () => {
         </div>
         <div className={styles.boxDesign}>
           <h5 bold>
-            <Image src={Tick} />
+            <Image src={Tick} alt="Tick" />
             Rebranding a website
           </h5>
           <p>

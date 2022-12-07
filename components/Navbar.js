@@ -23,9 +23,9 @@ const Navbar = () => {
         </div>
         <button className={styles.hamburger} onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? (
-            <Image src={close} width={"20"} height={"20"} />
+            <Image src={close} width={"20"} height={"20"} alt="close" />
           ) : (
-            <Image src={hamburger} width={"20"} height={"20"} />
+            <Image src={hamburger} width={"20"} height={"20"} alt="hamburger" />
           )}
         </button>
 

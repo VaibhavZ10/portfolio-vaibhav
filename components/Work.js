@@ -14,7 +14,7 @@ const Services = () => {
       <div className={styles.boxContainer}>
         <div className={styles.boxDesign}>
           <h5 bold>Task Tracker using React </h5>
-          <Image src={task} width={"275px"} height={"170px"} />
+          <Image src={task} width={"275px"} height={"170px"} alt="task" />
           <p>A daily task tracker app using built using ReactJS.</p>
           <a href="https://github.com/VaibhavZ10/react-task-tracker">
             {" "}
@@ -23,7 +23,7 @@ const Services = () => {
         </div>
         <div className={styles.boxDesign}>
           <h5 bold>Alambre Cables Website </h5>
-          <Image src={alambre} width={"275px"} height={"150px"} />
+          <Image src={alambre} width={"275px"} height={"150px"} alt="alambre" />
           <p>
             Delivered the design and front-end profile for a Mumbai based Alarm
             break company : Alambre.
