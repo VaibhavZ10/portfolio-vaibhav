@@ -44,3 +44,6 @@ const ContactForm = () => {
   );
 };
 export default ContactForm;
+module.exports = {
+  pageExtensions: ["page.tsx", "page.ts", "page.jsx", "page.js"],
+};
